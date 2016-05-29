@@ -20,4 +20,4 @@ Yet another react starter, because there are never enough
 
 # License
 
-[MIT LICENSE][./LICENSE]
+[MIT LICENSE](./LICENSE)

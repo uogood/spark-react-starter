@@ -10,6 +10,6 @@ const root = shallowRenderer.getRenderOutput();
 describe( 'rootComponent', () => {
   it('can be rendered', () => {
     assert( root )
-    expect( root.props.children ).to.equal( 'Hello World' )
+    expect( root.props.children ).to.be.a( 'object' );
   });
 } );

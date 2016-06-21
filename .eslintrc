@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "mocha"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "rules": {
+    "space-in-parens": ["error", "always"]
+  }
+}

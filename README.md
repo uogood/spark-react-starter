@@ -8,11 +8,11 @@ Yet another react starter, because there are never enough
 * Webpack + babel compilation for es6, jsx, and stage-1 compatibility
 * Webpack dev server with a basic index page powered by Jade (pug)
 * Mocha tests + test coverage reporting
+* Eslint rules
 
 # What's to come?
 
 * More test utilities + more tests
-* Eslint rules
 * Redux
 * Hot reloading
 * Isomorphic app/server rendering

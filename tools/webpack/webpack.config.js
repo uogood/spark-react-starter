@@ -4,11 +4,11 @@ import path from 'path';
 const config = {
   cache: true,
   entry: {
-    'entry': [ 'babel-polyfill', './src/entry.js' ],
-    'index': [ 'file?name=index.html!jade-html!./src/index.jade' ],
+    entry: ['babel-polyfill', './src/entry.js'],
+    index: ['file?name=index.html!jade-html!./src/index.jade'],
   },
   output: {
-    path: path.join( __dirname, '../dist' ),
+    path: path.join( __dirname, '../../dist' ),
     filename: '[name].js',
     publicPath: 'http://localhost:8090/',
   },
@@ -16,28 +16,28 @@ const config = {
     preLoaders: [
       {
         test: /\.jsx?$/,
-        loader: 'standard',
-        exclude: /node_modules/
-      }
+        loader: 'eslint',
+        exclude: /node_modules/,
+      },
     ],
     loaders: [
       {
         test: /\.json$/,
-        loader: 'json'
+        loader: 'json',
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html',
       },
       {
         test: /\.jsx?$/,
         loader: 'babel',
-      }
-    ]
+      },
+    ],
   },
-   plugins: [
+  plugins: [
     new webpack.ProvidePlugin( {
-      'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+      fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch',
     } ),
   ],
 };

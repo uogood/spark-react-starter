@@ -13,7 +13,6 @@ config.devtool = 'cheap-module-eval-source-map';
 config.entry.unshift(
   'webpack-dev-server/client?http://' + wds.hostname + ':' + wds.port,
   'webpack/hot/only-dev-server',
-  'react-hot-loader/patch',
 );
 
 config.devServer = {
@@ -42,6 +41,7 @@ config.plugins = [
     __SERVER__ : false,
     __PRODUCTION__:  false,
     __DEV__ : true,
+    'process.env.NODE_ENV': '"development"'
   } ),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoErrorsPlugin(),

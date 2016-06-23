@@ -11,6 +11,8 @@
   },
   "rules": {
     "space-in-parens": ["error", "always"],
-    "global-require": 0
+    "global-require": 0,
+    "prefer-template": 0,
+    "new-cap": 0,
   }
 }

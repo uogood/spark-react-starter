@@ -82,7 +82,7 @@ server.ext( 'onPreResponse', ( request, reply ) => {
       </Provider>
     );
 
-    const webserver = __PRODUCTION__ ? '' : `//${hostname}:8080`;
+    const webserver = __PRODUCTION__ ? '/dist' : `//${hostname}:8080`;
 
     const renderTmpl = pug.compileFile( './src/index.pug' );
     const output = renderTmpl( {

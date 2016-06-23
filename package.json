@@ -14,6 +14,9 @@
     "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- src/**/test.js --compilers js:babel-register",
     "postinstall": "webpack -p --config tools/webpack/client/production.js"
   },
+  "engines": {
+    "node" : "6.2.2"
+  },
   "author": "Joey Kudish",
   "license": "UNLICENSED",
   "devDependencies": {

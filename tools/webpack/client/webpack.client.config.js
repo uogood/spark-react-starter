@@ -7,6 +7,7 @@ const config = {
   debug: false,
   devtool: false,
   entry: [
+    'react-hot-loader/patch',
     'babel-polyfill',
     './src/client-entry.js',
   ],
@@ -21,6 +22,7 @@ const config = {
       __SERVER__: false,
       __PRODUCTION__: true,
       __DEV__: false,
+      'process.env.NODE_ENV': '"production"'
     } ),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),

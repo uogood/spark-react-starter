@@ -1,7 +1,20 @@
 {
   "name": "SparkReactStarter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A universal/isomorphic React starter project by the team at Spark Consulting that includes: es6, babel, webpack, react, react router, redux, hot reload, etc.",
+  "keywords": [
+    "es6",
+    "babel",
+    "webpack",
+    "react",
+    "react router",
+    "redux",
+    "hot reload"
+  ],
+  "contributors": "https://github.com/jkudish/spark-react-starter/graphs/contributors",
+  "repository": "https://github.com/jkudish/spark-react-starter",
+  "homepage": "https://github.com/jkudish/spark-react-starter",
+  "bugs": "https://github.com/jkudish/spark-react-starter/issues",
   "main": "index.js",
   "scripts": {
     "client-dev": "cross-env NODE_ENV=development webpack-dev-server --config tools/webpack/client/dev.js",

@@ -21,7 +21,7 @@ Yet another react starter, because there are never enough
 
 # Credits
 
-Inspired by [https://github.com/luandro/hapi-universal-redux](https://github.com/luandro/hapi-universal-redux) and [react-hot-loader-boilerplate](https://github.com/leshow/react-hot-loader-boilerplate)
+Inspired by [hapi-universal-redux](https://github.com/luandro/hapi-universal-redux) and [react-hot-loader-boilerplate](https://github.com/leshow/react-hot-loader-boilerplate)
 
 # License
 
